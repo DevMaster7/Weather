@@ -74,7 +74,7 @@ setInterval(updateTime, 30000);
 
 // Fetching Data
 function fetchOnDOM(location) {
-    let URL = `http://api.weatherapi.com/v1/forecast.json?key=8b63ae1e38994ffd82594030251002&q=${location}&days=7&aqi=no&alerts=no`
+    let URL = `https://api.weatherapi.com/v1/forecast.json?key=8b63ae1e38994ffd82594030251002&q=${location}&days=7&aqi=no&alerts=no`
     fetch(URL, {
         method: "GET",
         mode: "cors"
