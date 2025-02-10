@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="x-icon" href="assets/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="error">❌ Invalid Location</div>
+        <div class="content">
+            <div class="search">
+                <input type="text" name="area" id="area" placeholder="Search...">
+                <button id="btn">Get Weather</button>
+            </div>
+            <div class="data-con">
+                <div class="first-con">
+                    <div style="width: 60px;height: 27px;background: rgba(0, 0, 0, 0);"></div>
+                    <div class="country">Country</div>
+                    <div class="theme-con">
+                        <div class="cirbtn"></div>
+                    </div>
+                </div>
+                <div class="date">Monday 2/5/2025 9:30 AM</div>
+                <div class="more-data">
+                    <div id="humidity"><i class="fa-solid fa-droplet"></i> 0%<br>Humidity</div>
+                    <img id="showIcon" src="https://cdn.weatherapi.com/weather/64x64/day/143.png" alt="">
+                    <div id="wind"><i class="fa-solid fa-wind"></i> 0kmh<br>Wind</div>
+                </div>
+                <div
+                    style="width: 90%;display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                    <div class="temp-con flex">
+                        <div class="temp">Start From<br>0°C</div>
+                        <div class="current-temp">0°C</div>
+                        <div class="temp">Go To<br>0°C</div>
+                    </div>
+                    <div class="feelslike">Feels Like 0°C</div>
+                </div>
+                <div class="graph border"></div>
+            </div>
+            <div class="more-days-container flex">
+                <div class="circle cir1"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="more-days">
+                    <!-- <div class="boxes">
+                        <div class="foreCastDay">Wednesday</div><img class="foreCastImg"
+                            src="//cdn.weatherapi.com/weather/64x64/day/113.png">
+                        <div class="text">Sunny</div>
+                        <div class="foreCastTempCon">
+                            <div>27°</div>
+                            <div class="foreCastMinTemp">12°</div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="circle cir2"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+        </div>
+</body>
+<script src="script.js"></script>
+
+</html>
